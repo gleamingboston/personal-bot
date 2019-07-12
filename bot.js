@@ -20,6 +20,16 @@ client.on('message', message => {
     	message.reply('you are a noob mama');
   	}
 });
+client.on('message', message => {
+    if (message.content === 'prefix') {
+    	message.reply('The prefix is :');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'sam') {
+    	message.reply('sam is my boi u understand, you dont touch him.');
+  	}
+});
 
 // THIS MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
